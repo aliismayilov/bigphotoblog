@@ -2,6 +2,11 @@
 
 FactoryGirl.define do
   factory :photo do
-    user nil
+    user
+
+    upload do
+      extend ActionDispatch::TestProcess
+      fixture_file_upload('spec/fixtures/images/image.jpg', 'image/jpg')
+    end
   end
 end
