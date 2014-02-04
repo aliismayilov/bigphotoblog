@@ -15,3 +15,7 @@ gem 'slim'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
+
+group :development do
+  gem 'jumpup', '0.0.3'
+end
