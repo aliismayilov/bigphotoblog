@@ -11,14 +11,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'slim'
+gem 'jumpup',        '0.0.3'
+gem 'jumpup-heroku', '0.0.3'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
-end
-
-group :development do
-  gem 'jumpup',        '0.0.3'
-  gem 'jumpup-heroku', '0.0.3'
 end
 
 group :test do
