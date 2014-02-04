@@ -14,6 +14,10 @@ gem 'slim'
 gem 'jumpup',        '0.0.3'
 gem 'jumpup-heroku', '0.0.3'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
