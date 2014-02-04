@@ -17,7 +17,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'jumpup', '0.0.3'
+  gem 'jumpup',        '0.0.3'
+  gem 'jumpup-heroku', '0.0.3'
 end
 
 group :test do
