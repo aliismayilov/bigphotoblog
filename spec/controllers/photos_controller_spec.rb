@@ -15,4 +15,23 @@ describe PhotosController do
       expect(assigns(:photos)).to eq(Photo.all)
     end
   end
+
+  describe :new do
+    let(:action) { get :new }
+
+    it_behaves_like :authentication_is_required
+
+    context 'logged in' do
+      let!(:user) { create :user }
+
+      before do
+        sign_in user
+        action
+      end
+
+      it { should respond_with :success }
+      it { should render_template :new }
+      it { should render_with_layout :application }
+    end
+  end
 end

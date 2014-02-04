@@ -16,3 +16,4 @@
 /tmp
 /coverage
 /public/system
+*.swp
