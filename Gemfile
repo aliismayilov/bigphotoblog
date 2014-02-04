@@ -19,3 +19,7 @@ end
 group :development do
   gem 'jumpup', '0.0.3'
 end
+
+group :test do
+  gem 'simplecov'
+end
