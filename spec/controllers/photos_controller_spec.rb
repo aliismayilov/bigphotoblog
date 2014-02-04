@@ -34,4 +34,11 @@ describe PhotosController do
       it { should render_with_layout :application }
     end
   end
+
+  describe :create do
+    let(:action) { post :create, params }
+    let(:params) { {} }
+
+    it_behaves_like :authentication_is_required
+  end
 end

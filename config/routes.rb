@@ -1,5 +1,5 @@
 Bigphotoblog::Application.routes.draw do
   devise_for :users
 
-  resources :photos, only: [ :index, :new ]
+  resources :photos, only: [ :index, :new, :create ]
 end
