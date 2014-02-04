@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://rails-assets.org'
 
 ruby '2.1.0'
 
@@ -16,9 +15,7 @@ gem 'slim'
 gem 'jumpup',        '0.0.3'
 gem 'jumpup-heroku', '0.0.3'
 gem 'paperclip', '~> 4.0'
-
-# assets
-gem 'rails-assets-bootstrap', '~> 3.0'
+gem 'bootstrap-sass', '~> 3.1.0'
 
 group :production do
   gem 'rails_12factor'
