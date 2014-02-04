@@ -13,6 +13,7 @@ gem 'devise'
 gem 'slim'
 gem 'jumpup',        '0.0.3'
 gem 'jumpup-heroku', '0.0.3'
+gem 'paperclip', '~> 4.0'
 
 group :production do
   gem 'rails_12factor'
