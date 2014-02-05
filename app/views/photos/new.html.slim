@@ -1,1 +1,12 @@
-p Photos#new
+= s3_uploader_form callback_url: photos_url, callback_param: "photo[direct_upload_url]", id: "s3-uploader"
+  = file_field_tag :file, multiple: true, class: 'btn btn-default'
+
+erb:
+  <script id="template-upload" type="text/x-tmpl">
+    <div id="file-{%=o.unique_id%}" class="upload">
+      {%=o.name%}
+      <div class="progress">
+        <div class="bar progress-bar" style="width: 0%"></div>
+      </div>
+    </div>
+  </script>
