@@ -9,5 +9,6 @@ class PhotosController < ApplicationController
   end
 
   def create
+    current_user.photos.create upload: URI.parse(URI.unescape(params['url']))
   end
 end

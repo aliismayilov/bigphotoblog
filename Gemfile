@@ -17,6 +17,7 @@ gem 'jumpup-heroku', '0.0.3'
 gem 'paperclip', '~> 4.0'
 gem 'bootstrap-sass', '~> 3.1.0'
 gem 's3_direct_upload', '0.1.6'
+gem 'aws-sdk', '~> 1.0'
 
 group :production do
   gem 'rails_12factor'

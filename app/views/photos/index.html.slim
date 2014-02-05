@@ -1,1 +1,5 @@
-p Photos#index
+h3 Photos#index
+
+.row
+- @photos.each do |photo|
+  .col-md-4 = image_tag photo.upload.url(:thumb), class: "img-responsive"

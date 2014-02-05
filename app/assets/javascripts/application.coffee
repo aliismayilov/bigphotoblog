@@ -6,7 +6,8 @@
 //= require_tree .
 
 ready = ->
-  $("#s3-uploader").S3Uploader()
+  $("#s3-uploader").S3Uploader
+    remove_completed_progress_bar: false
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
