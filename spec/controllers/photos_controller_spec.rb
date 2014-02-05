@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe PhotosController do
   describe :index do
-    let!(:photo) { create :photo }
     let(:action) { get :index }
 
     before { action }
@@ -49,11 +48,10 @@ describe PhotosController do
         @request.accept = "application/javascript"
         @request.env["devise.mapping"] = Devise.mappings[:user]
         sign_in user
-        action
       end
 
-      it 'persists photo of a user' do
-        expect(user.photos.count).to eql(1)
+      it 'persists photo of a user', :vcr do
+        expect{action}.to change{user.photos.count}.by(1)
       end
     end
   end

@@ -33,4 +33,6 @@ end
 group :test do
   gem 'simplecov'
   gem 'shoulda-matchers'
+  gem 'vcr', '2.8.0'
+  gem 'webmock', '< 1.16'
 end
